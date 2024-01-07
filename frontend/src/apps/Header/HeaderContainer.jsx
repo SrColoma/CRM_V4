@@ -84,11 +84,11 @@ export default function HeaderContent() {
         </Link>
       ),
     },
-    {
-      icon: <SettingOutlined />,
-      key: 'settingApp',
-      label: <Link to={'/settings'}>{translate('app_settings')}</Link>,
-    },
+    // {
+    //   icon: <SettingOutlined />,
+    //   key: 'settingApp',
+    //   label: <Link to={'/settings'}>{translate('app_settings')}</Link>,
+    // },
 
     {
       type: 'divider',
@@ -134,11 +134,13 @@ export default function HeaderContent() {
           {currentAdmin?.name?.charAt(0)?.toUpperCase()}
         </Avatar>
         {/* </Badge> */}
+        
       </Dropdown>
+      
 
-      <UpgradeButton />
+      {/* <UpgradeButton /> */}
 
-      <SelectLanguage />
+      {/* <SelectLanguage /> */}
     </Header>
   );
 }
