@@ -9,7 +9,8 @@ export default ({ mode }) => {
   const proxy_url =
     process.env.VITE_DEV_REMOTE === 'remote'
       ? process.env.VITE_BACKEND_SERVER
-      : 'http://localhost:8888/';
+      // : 'http://localhost:8888/';
+      : 'http://crm-backend:8888';
 
   const config = {
     plugins: [react()],
