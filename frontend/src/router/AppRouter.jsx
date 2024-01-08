@@ -71,9 +71,13 @@ export default function AppRouter() {
       path: '/about',
       element: <About />,
     },
+    // {
+    //   path: '/',
+    //   element: <Dashboard />,
+    // },
     {
       path: '/',
-      element: <Dashboard />,
+      element: <Customer />,
     },
     {
       path: '/customer',
