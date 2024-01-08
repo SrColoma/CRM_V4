@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react';
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
 
-  const proxy_url = 'http://crm-backend:8888';
+  const proxy_url = 'http://api.srcoloma.com';
   // const proxy_url =
   //   process.env.VITE_DEV_REMOTE === 'remote'
   //     ? process.env.VITE_BACKEND_SERVER
@@ -24,7 +24,7 @@ export default ({ mode }) => {
     server: {
       cors: true,
       host: 'crm.srcoloma.com',
-      port: 3000,
+      // port: 3000,
       proxy: {
         '/api': {
           target: proxy_url,
