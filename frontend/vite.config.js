@@ -22,6 +22,8 @@ export default ({ mode }) => {
       },
     },
     server: {
+      cors: true,
+      host: 'crm.srcoloma.com',
       port: 3000,
       proxy: {
         '/api': {
