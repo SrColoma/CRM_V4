@@ -6,7 +6,7 @@ import AuthLayout from '@/layout/AuthLayout';
 import SideContent from './SideContent';
 import SelectLanguage from '@/components/SelectLanguage';
 
-import logo from '@/style/images/idurar-crm-erp.svg';
+import logo from '@/style/images/logowhite.jpg';
 
 const { Content } = Layout;
 const { Title } = Typography;
@@ -21,7 +21,7 @@ const AuthModule = ({ authContent, AUTH_TITLE }) => {
           padding: '10px 20px',
         }}
       >
-        <SelectLanguage />
+        {/* <SelectLanguage /> */}
       </Content>
       <Content
         style={{

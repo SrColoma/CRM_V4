@@ -1,5 +1,6 @@
 import { Space, Layout, Divider, Typography } from 'antd';
-import logo from '@/style/images/idurar-crm-erp.svg';
+import logo from '@/style/images/logo-text-big.png';
+import logoImg from '@/style/images/logowhite.png';
 import useLanguage from '@/locale/useLanguage';
 
 const { Content } = Layout;
@@ -14,105 +15,36 @@ export default function SideContent() {
         width: '100%',
         maxWidth: '400px',
         margin: '0 auto',
+        display: 'flex', // Agregado para activar Flexbox
+        flexDirection: 'column', // Agregado para organizar los elementos en una columna
+        justifyContent: 'center', // Centrar los elementos verticalmente
+        alignItems: 'center', // Centrar los elementos horizontalmente
       }}
       className="sideContent"
     >
-      <div style={{ width: '100%' }}>
-        <img
-          src={logo}
-          alt="IDURAR ERP CRM"
-          style={{ margin: '0 auto 40px', display: 'block' }}
-          height={63}
-          width={220}
-        />
-        <div className="space40"></div>
-        <Title level={3}>{translate('Manage your company with')} :</Title>
-        <div className="space20"></div>
-        <ul className="list-checked">
-          <li className="list-checked-item">
-            <Space direction="vertical">
-              <Text strong>{translate('All-in-one tool')}</Text>
+      {/* div de 100px */}
+      <div style={{ height: '200px' }} />
 
-              <Text>{translate('Run and scale your ERP CRM Apps')}</Text>
-            </Space>
-          </li>
-
-          <li className="list-checked-item">
-            <Space direction="vertical">
-              <Text strong>{translate('Easily add and manage your services')}</Text>
-              <Text>{translate('It brings together your invoice clients and leads')}</Text>
-            </Space>
-          </li>
-        </ul>
-        <Divider />
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-          }}
-        >
-          {/* <img
-            src={logo1}
-            alt="Logo1"
-            style={{
-              margin: '0 15px',
-              display: 'block',
-              float: 'left',
-              width: '48px',
-              filter: 'grayscale(1)',
-              mixBlendMode: 'multiply',
-              opacity: '0.8',
-            }}
-            height={48}
-            width={48}
-          />
-          <img
-            src={logo2}
-            alt="Logo2"
-            style={{
-              margin: '0 15px',
-              display: 'block',
-              float: 'left',
-              width: '48px',
-              filter: 'grayscale(1)',
-              mixBlendMode: 'multiply',
-              opacity: '0.8',
-            }}
-            height={48}
-            width={48}
-          />
-          <img
-            src={logo3}
-            alt="Logo3"
-            style={{
-              margin: '0 15px',
-              display: 'block',
-              float: 'left',
-              width: '48px',
-              filter: 'grayscale(1)',
-              mixBlendMode: 'multiply',
-              opacity: '0.8',
-            }}
-            height={48}
-            width={48}
-          />
-          <img
-            src={logo4}
-            alt="Logo4"
-            style={{
-              margin: '0 15px',
-              display: 'block',
-              float: 'left',
-              width: '48px',
-              filter: 'grayscale(1)',
-              mixBlendMode: 'multiply',
-              opacity: '0.8',
-            }}
-            height={48}
-            width={48}
-          /> */}
-        </div>
-      </div>
+      <img
+        src={logoImg}
+        alt="Logo"
+        style={{
+          margin: '0 20px', // Modificado para agregar espacio a los lados
+          display: 'block',
+        }}
+        height={63}
+        width={63}
+      />
+      <img
+        src={logo}
+        alt="Logo"
+        style={{
+          margin: '0 20px', // Modificado para agregar espacio a los lados
+          display: 'block',
+        }}
+        height={63}
+        width={220}
+      />
     </Content>
   );
 }
