@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Run the setup script
-RUN npm run setup
+# RUN npm run setup
 
 # Make port 8888 available to the outside world
 EXPOSE 8888
